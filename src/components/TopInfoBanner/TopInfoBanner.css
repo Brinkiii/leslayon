@@ -1,0 +1,11 @@
+.topinfobanner {
+  background-color: #222222;
+  color: #fff;
+  text-align: center;
+  p {
+    margin-bottom: 0;
+    a {
+      color: #651fff;
+    }
+  }
+}

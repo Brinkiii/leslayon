@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+
+.hero-container {
+  @media (min-width: 1200px) {
+    max-height: calc(100svh - 106px);
+    overflow: clip;
+    position: relative;
+  }
+}
+
+blockquote {
+  text-align: left;
+  margin: 0;
+  font-family: "Orbitron", sans-serif;
+  max-width: 100%;
+  font-size: 70px;
+  text-align: center;
+  @media (min-width: 600px) {
+    font-size: 120px;
+  }
+  p {
+    text-shadow: 4px 3px 0px #04393f, 9px 8px 0px rgba(0, 0, 0, 0.15);
+  }
+}
+
+h1 {
+  font-family: "Orbitron", sans-serif;
+  text-shadow: 2px 1px 0px #04393f, 2px 1px 0px rgba(0, 0, 0, 0.15);
+  margin-bottom: 8px;
+}
+
+span {
+  display: block;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 700;
+  margin-block: 12px;
+}
+
+img {
+  max-height: 75svh;
+  @media (min-width: 900px) {
+    max-height: 80svh;
+  }
+  @media (min-width: 1200px) {
+    max-height: 150svh;
+  }
+}
+
+/* Für Bildschirme ab 600px Breite */
+@media (min-width: 600px) {
+  .left {
+    left: 16px;
+  }
+  .right {
+    right: 16px;
+  }
+}
+
+/* Für Bildschirme ab 900px Breite */
+@media (min-width: 900px) {
+  .left {
+    left: 32px;
+  }
+  .right {
+    right: 32px;
+  }
+}
+
+/* Für Bildschirme ab 1200px Breite */
+@media (min-width: 1200px) {
+  .left {
+    left: 64px;
+  }
+  .right {
+    right: 64px;
+  }
+}
+
+/* Für Bildschirme ab 1536px Breite */
+@media (min-width: 1536px) {
+  .left {
+    left: 128px;
+  }
+  .right {
+    right: 128px;
+  }
+}
+
+/* Für Bildschirme kleiner als 600px */
+@media (max-width: 599px) {
+  .left {
+    left: 8px;
+  }
+  .right {
+    right: 8px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .left,
+  .right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.fade-image {
+  max-width: 860px;
+}
+
+.transition-group .fade-enter {
+  opacity: 0;
+}
+
+.transition-group .fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease;
+}
+
+.transition-group .fade-exit {
+  opacity: 1;
+}
+
+.transition-group .fade-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease;
+}
